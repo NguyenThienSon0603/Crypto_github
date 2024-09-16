@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-dots{
+    @apply
+    static
+}
+.slick-dots li{
+    @apply
+    bg-white
+    rounded-full
+    w-[10px]
+    h-[10px]
+    mt-4
+}
+.slick-dots li.slick-active{
+    @apply
+    bg-[#FF5EA3]
+}
+.slick-dots li button::before{
+    font-size: 0px;
+}
+
+/* responsive */
+@media screen and (min-width: 300px){
+    body{
+        padding: 20px;
+    }
+} 
+@media screen and (max-width: 767px){
+    .slick-track{
+        transform: none !important;
+        width: 100% !important;
+    }
+    .responsive{
+        width: 100% !important;
+        margin: 0 0 20px 0;
+    }
+    .slick-cloned{
+        display: none !important;
+    }
+} 
