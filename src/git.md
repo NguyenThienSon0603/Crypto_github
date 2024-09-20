@@ -20,15 +20,18 @@
 ### staging (file màu xanh)
 => lúc này file sẵn sàng để đưa lên repo remote
 
-### git add . => dùng để thêm tất cả các file ở trong thư mực hiện tại vào trong staging
+## git add . 
+=> dùng để thêm tất cả các file ở trong thư mực hiện tại vào trong staging
 
-### git add -A => dùng để thêm tất cả các file ở trong dự án vào trong staging
+## git add -A 
+=> dùng để thêm tất cả các file ở trong dự án vào trong staging
 
-### git add <đường dẫn file> => Chỉ thêm file cụ thể vào trong staging
+## git add <đường dẫn file> 
+=> Chỉ thêm file cụ thể vào trong staging
 
 <!-- Trước khi chạy lệnh commit thì chạy 2 lệnh này -->
-### git config --global user.name "name"
-### git config --global user.email "email đăng ký Git"
+## git config --global user.name "name"
+## git config --global user.email "email đăng ký Git"
 => config git (chỉ chạy duy nhất 1 lần)
 
 ## git commit -m "message"
@@ -42,12 +45,15 @@
 => đưa sourcecode lên repo remote
 => từ lần push code thứ 2 : git push
 
-## Đưa file từ staging về lại working
-git reset => Đưa tất cả file từ staging về lại working 
+ <!-- Đưa file từ staging về lại working -->
+## git reset 
+=> Đưa tất cả file từ staging về lại working 
 
-git restore -S . => Đưa tất cả file từ staging về lại working 
+## git restore -S . 
+=> Đưa tất cả file từ staging về lại working 
 
-git restore -S <url file> => Chỉ đưa duy nhất file về working
+## git restore -S <url file> 
+=> Chỉ đưa duy nhất file về working
 
 <!-- CHECK OUT -->
 ## git checkout <url file>
@@ -74,8 +80,14 @@ git restore -S <url file> => Chỉ đưa duy nhất file về working
 ## git switch <tên nhánh>
 => Chuyển qua nhánh <tên nhánh>
 
+<!-- Sau khi merge code các branch -->
+## git pull
+=>lấy toàn bộ sourcecode thay đổi ở repo remote về repo local 
+=> git pull --no-ff
 
-
+## git clone <url reporemote>
+=> Dùng để clone source code của 1 repo bất kỳ
+=> Mở terminal git bash here 
 
 
 
@@ -89,7 +101,7 @@ git restore -S <url file> => Chỉ đưa duy nhất file về working
 
 
 <!-- Lưu ý -->
-## Ko đưa thư mực node_modules lên repo remote
+### Ko đưa thư mực node_modules lên repo remote
 => Node_modueles chiếm dung lượng rất lớn
 => Node_modules có thể cài lại thông qua câu lệnh : npm i
 
